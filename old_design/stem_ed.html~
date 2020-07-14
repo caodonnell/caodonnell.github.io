@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>Christine O'Donnell</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"-->
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+<!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/font-awesome.min.css" />
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif}
+.bar,h1,button {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar dark-grey card-2 left-align large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large deep-orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="bar-item button hide-small border-white border-right padding-large hover-deep-orange">Home</a>
+    <a href="research.html" class="bar-item button hide-small border-white border-left border-right padding-large hover-deep-orange">Research</a>
+    <a href="#" class="bar-item button border-white border-left border-right padding-large white text-deep-orange">Science Communication</a>
+    <a href="personal.html" class="bar-item button hide-small border-left border-white padding-large hover-deep-orange">Personal</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block grey hide hide-large hide-medium large">
+    <a href="index.html" class="bar-item button padding-large">Home</a>
+    <a href="research.html" class="bar-item button padding-large">Research</a>
+    <a href="personal.html" class="bar-item button padding-large">Personal</a>
+  </div>
+</div>
+
+
+<div id="main-wrapper">
+
+<!-- Header -->
+<header class="container light-orange center" style="padding:30px 16px 10px 16px">
+  <!--h1 class="margin xxxlarge">Science Communication</h1-->
+  <p class="margin xlsmall">Besides my research interests, I am also passionate about STEM education. </p>
+</header>
+
+<!-- First Grid -->
+<!--div class="row-padding padding-64 container">
+  <div class="content">
+    <div>
+      <h1>Science Communication</h1>
+      <h5 class="padding-32">Besides my research interests, I am also passionate about being an effective science communicator, and it's something I'd like to make a career out of (though I haven't yet decided what that means in terms of a specific job). Here are some examples of how I've gotten training in science communication and applied it to policy and teaching. </h5>
+    </div>
+
+    <div class="third center">
+    </div>
+  </div>
+</div-->
+
+
+<!-- Third Grid -->
+<div class="row-padding padding-64 container">
+  <div class="content">
+    <!--div class="twothird"-->
+    <div>
+      <h1>Outreach & Teaching</h1>
+      <h5 class="padding-32">I've also pursued opportunities to teach and conduct outreach. Most recently, I volunteered with the <a href="http://warrior-scholar.org/">Warrior Scholar Project</a>, an academic "bootcamp" for veterans returning to school, during their STEM week at the University of Arizona. I co-led a daily exoplanet research lab and provided additional instructional assistance during recitation sections.</h5>
+
+      <h5>In Spring 2017, I was the TA for an introductory astronomy course for non-majors that was taught in a planetarium theatre. I volunteered to give one of the lectures (Milky Way structure) and developed a lecture combining a traditional slideshow with planetarium software features. In the past, I have TA-ed for introductory physics courses, and while I was getting my MPP, I TA-ed for an economics course and tutored statistics (including statistical programming in STATA).</h5>
+    </div>
+
+    <!--div class="third center">
+      <img class="img-circle" src="./images/pic03.jpg">
+    </div-->
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="row-padding light-grey padding-64 container">
+  <div class="content">
+    <div class="third center">
+	<!--figure-->
+      		<img class="img-circle" src="./images/badge.png">
+		<!--figcaption>Digital badge certification</figcaption-->
+	<!--/figure-->
+    </div>
+    <div class="twothird">
+      <h1>Science Communication Training</h1>
+      <h5 class="padding-32">In addition to real-world experiences, I have attended trainings to enhance my science communication skills. I'm a <a href="https://aas.org/outreach/aas-astronomy-ambassadors-program">AAS Astronomy Ambassador</a> (Nov. 2014 workshop), and I participated in an <a href="http://www.aldakavlilearningcenter.org/">Alan Alda Center Science Communication Workshop</a> which used improvisation exercises to focus on how to engage audiences including the general public, media, and funding sources. In April 2017, I earned a digital badge through the University of Arizona Graduate College on <a href="https://backpack.openbadges.org/share/9cc1c5eb9c9cd1b653b2af3157d3f27d/">Presenting to Diverse Audiences</a>.</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="row-padding light-grey padding-64 container">
+  <div class="content">
+   
+    <div class="twothird">
+      <h1>Public Policy</h1>
+      <h5 class="padding-32">Between my B.A. in Astronomy/Physics (Univeristy of Virginia 2013) and starting my Ph.D., I earned a Master of Public Policy (MPP) degree from the <a href="http://batten.virginia.edu/">Frank Batten School of Leadership & Public Policy at the University of Virginia</a>. Through the program, I learned and practiced many general policy skills, including writing breifs, memos, and other articles as well as analyzing the effectiveness of policies. I applied these lessons in my internship with the <a href="http://www.aapt.org/">American Association of Physics Teachers (AAPT)</a> where I created advocacy resources to enourage and aid members in interacting with policymakers. For my MPP thesis, I wrote a policy analysis with AAPT on increasing gender diversity in physics, and I presented the results at the 5th International Conference on Women in Physics in Waterloo, Canada. </h5>
+    </div>
+     <div class="third center">
+	<figure>
+      	<img class="img-circle" src="./images/batten_large.png">
+	</figure>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container grey">
+<footer id="footer">
+<section></section>
+<section >
+	<dl class="alt">
+		<dt>Address</dt><dd>933 N Cherry Ave &bull; Tucson, AZ 85721 &bull; USA</dd>
+		<dt>Email</dt><dd><a href="mailto:caodonnell@email.arizona.edu">caodonnell@email.arizona.edu</a></dd>
+	</dl>
+	<ul class="icons">
+		<li><a href="https://www.facebook.com/odonnell.christine" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+		<!--li><a href="https://www.instagram.com/supernovacrafts/" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li-->
+		<!--li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li-->
+		<li><a href="https://www.linkedin.com/in/christineodonnell/" class="icon fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+	</ul>
+</section>
+</footer> </div>
+</div>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else { 
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
