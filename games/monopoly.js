@@ -1322,7 +1322,7 @@ function updatePosition() {
 	}
 
 	left = 0;
-	top = 53;
+	top = 28;
 	for (var i = turn; i <= pcount; i++) {
 		if (player[i].jail) {
 			document.getElementById("jailpositionholder").innerHTML += "<div class='cell-position' title='" + player[i].name + "' style='background-color: " + player[i].color + "; left: " + left + "px; top: " + top + "px;'></div>";
