@@ -1477,10 +1477,10 @@ function updateOwned() {
 			housetext = "";
 			if (sq.house >= 1 && sq.house <= 4) {
 				for (var x = 1; x <= sq.house; x++) {
-					housetext += "<img src='images/house.png' alt='' title='House' class='house' />";
+					housetext += "<img src='images/diploma.png' alt='' title='House' class='house' />";
 				}
 			} else if (sq.hotel) {
-				housetext += "<img src='images/hotel.png' alt='' title='Hotel' class='hotel' />";
+				housetext += "<img src='images/cohort.png' alt='' title='Hotel' class='hotel' />";
 			}
 
 			if (HTML === "") {
@@ -1574,7 +1574,7 @@ function updateOption() {
 		}
 
 		$("#buildings").show();
-		document.getElementById("buildings").innerHTML = "<img src='images/house.png' alt='' title='House' class='house' />:&nbsp;" + housesum + "&nbsp;&nbsp;<img src='images/hotel.png' alt='' title='Hotel' class='hotel' />:&nbsp;" + hotelsum;
+		document.getElementById("buildings").innerHTML = "<img src='images/diploma.png' alt='' title='House' class='house' />:&nbsp;" + housesum + "&nbsp;&nbsp;<img src='images/cohort.png' alt='' title='Hotel' class='hotel' />:&nbsp;" + hotelsum;
 
 		return;
 	}
@@ -1605,19 +1605,19 @@ function updateOption() {
 			buyhousebutton.disabled = false;
 			sellhousebutton.disabled = false;
 
-			buyhousebutton.value = "Buy house ($" + sq.houseprice + ")";
-		    sellhousebutton.value = "Sell house ($" + Math.round(sq.houseprice / 20) * 10 + ")";
-			buyhousebutton.title = "Buy a house for $" + sq.houseprice;
-		    sellhousebutton.title = "Sell a house for $" + Math.round(sq.houseprice /20) * 10;
+			buyhousebutton.value = "Buy Diploma ($" + sq.houseprice + ")";
+		    sellhousebutton.value = "Sell Diploma ($" + Math.round(sq.houseprice / 20) * 10 + ")";
+			buyhousebutton.title = "Buy a Diploma for $" + sq.houseprice;
+		    sellhousebutton.title = "Sell a Diploma for $" + Math.round(sq.houseprice /20) * 10;
 
 			if (sq.house == 4) {
-				buyhousebutton.value = "Buy hotel ($" + sq.houseprice + ")";
-				buyhousebutton.title = "Buy a hotel for $" + sq.houseprice;
+				buyhousebutton.value = "Buy Cohort ($" + sq.houseprice + ")";
+				buyhousebutton.title = "Buy a Cohort for $" + sq.houseprice;
 			}
 			if (sq.hotel == 1) {
 				$("#buyhousebutton").hide();
-			    sellhousebutton.value = "Sell hotel ($" + Math.round(sq.houseprice / 20)*10 + ")";
-			    sellhousebutton.title = "Sell a hotel for $" + Math.round(sq.houseprice / 20) * 10;
+			    sellhousebutton.value = "Sell Cohort ($" + Math.round(sq.houseprice / 20)*10 + ")";
+			    sellhousebutton.title = "Sell a Cohort for $" + Math.round(sq.houseprice / 20) * 10;
 			}
 
 			var maxhouse = 0;
@@ -1638,7 +1638,7 @@ function updateOption() {
 				if (s.owner !== sq.owner) {
 					buyhousebutton.disabled = true;
 					sellhousebutton.disabled = true;
-					buyhousebutton.title = "Before you can buy a house, you must own all the properties of this color-group.";
+					buyhousebutton.title = "Before you can buy a Diploma, you must own all the properties of this color-group.";
 				} else {
 
 					if (s.house > maxhouse) {
@@ -1661,7 +1661,7 @@ function updateOption() {
 
 			if (!allGroupUnmortgaged) {
 				buyhousebutton.disabled = true;
-				buyhousebutton.title = "Before you can buy a house, you must unmortgage all the properties of this color-group.";
+				buyhousebutton.title = "Before you can buy a Diploma, you must unmortgage all the properties of this color-group.";
 			}
 
 			// Force even building
@@ -1669,20 +1669,20 @@ function updateOption() {
 				buyhousebutton.disabled = true;
 
 				if (sq.house == 1) {
-					buyhousebutton.title = "Before you can buy another house, the other properties of this color-group must all have one house.";
+					buyhousebutton.title = "Before you can buy another Diploma, the other properties of this color-group must all have one Diploma.";
 				} else if (sq.house == 4) {
-					buyhousebutton.title = "Before you can buy a hotel, the other properties of this color-group must all have 4 houses.";
+					buyhousebutton.title = "Before you can buy a Cohort, the other properties of this color-group must all have 4 Diplomas.";
 				} else {
-					buyhousebutton.title = "Before you can buy a house, the other properties of this color-group must all have " + sq.house + " houses.";
+					buyhousebutton.title = "Before you can buy a Diploma, the other properties of this color-group must all have " + sq.house + " Diplomas.";
 				}
 			}
 			if (sq.house < maxhouse) {
 				sellhousebutton.disabled = true;
 
 				if (sq.house == 1) {
-					sellhousebutton.title = "Before you can sell house, the other properties of this color-group must all have one house.";
+					sellhousebutton.title = "Before you can sell Diplomas, the other properties of this color-group must all have one Diploma.";
 				} else {
-					sellhousebutton.title = "Before you can sell a house, the other properties of this color-group must all have " + sq.house + " houses.";
+					sellhousebutton.title = "Before you can sell a Diploma, the other properties of this color-group must all have " + sq.house + " Diplomas.";
 				}
 			}
 
@@ -2049,7 +2049,7 @@ function buyHouse(index) {
 
 			} else {
 				sq.house++;
-				addAlert(p.name + " placed a house on " + sq.name + ".");
+				addAlert(p.name + " placed a Diploma on " + sq.name + ".");
 			}
 
 		} else {
@@ -2059,7 +2059,7 @@ function buyHouse(index) {
 			} else {
 				sq.house = 5;
 				sq.hotel = 1;
-				addAlert(p.name + " placed a hotel on " + sq.name + ".");
+				addAlert(p.name + " placed a Cohort on " + sq.name + ".");
 			}
 		}
 
@@ -2077,10 +2077,10 @@ function sellHouse(index) {
 	if (sq.hotel === 1) {
 		sq.hotel = 0;
 		sq.house = 4;
-		addAlert(p.name + " sold the hotel on " + sq.name + ".");
+		addAlert(p.name + " sold the Cohort on " + sq.name + ".");
 	} else {
 		sq.house--;
-		addAlert(p.name + " sold a house on " + sq.name + ".");
+		addAlert(p.name + " sold a Diploma on " + sq.name + ".");
 	}
 
     p.money += Math.round(sq.houseprice / 20) * 10;
@@ -2120,9 +2120,9 @@ function showStats() {
 				}
 
 				if (sq.house == 5) {
-					housetext += "<span style='float: right; font-weight: bold;'>1&nbsp;x&nbsp;<img src='images/hotel.png' alt='' title='Hotel' class='hotel' style='float: none;' /></span>";
+					housetext += "<span style='float: right; font-weight: bold;'>1&nbsp;x&nbsp;<img src='images/cohort.png' alt='' title='Hotel' class='hotel' style='float: none;' /></span>";
 				} else if (sq.house > 0 && sq.house < 5) {
-					housetext += "<span style='float: right; font-weight: bold;'>" + sq.house + "&nbsp;x&nbsp;<img src='images/house.png' alt='' title='House' class='house' style='float: none;' /></span>";
+					housetext += "<span style='float: right; font-weight: bold;'>" + sq.house + "&nbsp;x&nbsp;<img src='images/diploma.png' alt='' title='House' class='house' style='float: none;' /></span>";
 				}
 
 				HTML += "<tr><td class='statscellcolor' style='background: " + sq.color + ";";
@@ -2963,10 +2963,10 @@ window.onload = function() {
 
 		if (p.money < s.houseprice) {
 			if (s.house === 4) {
-				popup("<p>You need $" + (s.houseprice - player[s.owner].money) + " more to buy a hotel for " + s.name + ".</p>");
+				popup("<p>You need $" + (s.houseprice - player[s.owner].money) + " more to buy a Cohort for " + s.name + ".</p>");
 				return;
 			} else {
-				popup("<p>You need $" + (s.houseprice - player[s.owner].money) + " more to buy a house for " + s.name + ".</p>");
+				popup("<p>You need $" + (s.houseprice - player[s.owner].money) + " more to buy a Diploma for " + s.name + ".</p>");
 				return;
 			}
 		}
@@ -2980,10 +2980,10 @@ window.onload = function() {
 		}
 
 		if (s.house < 4 && houseSum >= 32) {
-			popup("<p>All 32 houses are owned. You must wait until one becomes available.</p>");
+			popup("<p>All 32 Diplomas are owned. You must wait until one becomes available.</p>");
 			return;
 		} else if (s.house === 4 && hotelSum >= 12) {
-			popup("<p>All 12 hotels are owned. You must wait until one becomes available.</p>");
+			popup("<p>All 12 Cohorts are owned. You must wait until one becomes available.</p>");
 			return;
 		}
 

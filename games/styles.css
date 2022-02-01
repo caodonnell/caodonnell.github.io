@@ -11,6 +11,11 @@ td {
 	text-align: center;
 }
 
+div,p {
+        #font-size: 13px;
+	font-family: arial, sans-serif;
+}
+
 #setup {
 	display: none;
 	margin: 15px;
