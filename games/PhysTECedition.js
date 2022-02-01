@@ -212,12 +212,12 @@ communityChestCards[10] = new Card("Pay school fees of $200.", function() { subt
 communityChestCards[11] = new Card("You need to buy more classroom supplies. Pay $100.", function() { subtractamount(100, 'Community Chest');});
 communityChestCards[12] = new Card("It is your birthday! Collect $100 from every player.", function() { collectfromeachplayer(100, 'Community Chest');});
 communityChestCards[13] = new Card("Advance to \"GO\" (Collect $2000).", function() { advance(0);});
-communityChestCards[14] = new Card("You are assessed for additional certification fees. $200 per house. $500 per hotel.", function() { streetrepairs(200, 300);});
+communityChestCards[14] = new Card("You are assessed for additional certification fees. $200 per Diploma. $500 per Cohort.", function() { streetrepairs(200, 300);});
 communityChestCards[15] = new Card("Go directly to Re-certification. Do not pass \"GO\". Do not collect $2000.", function() { gotojail();});
 
 
 chanceCards[0] = new Card("GET OUT OF RE-CERTIFICATION FREE. This card may be kept until needed or traded.", function(p) { p.chanceJailCard=true; updateOwned();});
-chanceCards[1] = new Card("Pay additional certification fees. For each house pay $150. For each hotel $300.", function() { streetrepairs(150, 300);});
+chanceCards[1] = new Card("Pay additional certification fees. For each Diploma pay $150. For each Cohort $300.", function() { streetrepairs(150, 300);});
 chanceCards[2] = new Card("You lose a class session this semester. Pay $500.", function() { subtractamount(500, 'Chance');});
 chanceCards[3] = new Card("You have been asked to share your classroom activities with your colleagues. Pay each player $200.", function() { payeachplayer(200, 'Chance');});
 chanceCards[4] = new Card("Go back three spaces.", function() { gobackthreespaces();});
