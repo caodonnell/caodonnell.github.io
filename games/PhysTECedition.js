@@ -198,7 +198,7 @@ square[39] = new Square("Cal Poly San Luis Obispo", null, "#0000FF", 2370, 10, 1
 var communityChestCards = [];
 var chanceCards = [];
 
-communityChestCards[0] = new Card("GET OUT OF RE-CERTIFICATION FREE. This card may be kept until needed or sold.", function(p) { p.communityChestJailCard = true; updateOwned();});
+communityChestCards[0] = new Card(" GET OUT OF RE-CERTIFICATION FREE. This card may be kept until needed or sold.", function(p) { p.communityChestJailCard = true; updateOwned();});
 communityChestCards[1] = new Card("You have won second prize in a physics demo contest. Collect $1000.", function() { addamount(1000, 'Community Chest');});
 communityChestCards[2] = new Card("From sale of lesson plans, you get $200.", function() { addamount(200, 'Community Chest');});
 communityChestCards[3] = new Card("You are fully vested in your pension! Collect $500.", function() { addamount(500, 'Community Chest');});
@@ -221,7 +221,7 @@ chanceCards[1] = new Card("Pay additional certification fees. For each Diploma p
 chanceCards[2] = new Card("You lose a class session this semester. Pay $500.", function() { subtractamount(500, 'Chance');});
 chanceCards[3] = new Card("You have been asked to share your classroom activities with your colleagues. Pay each player $200.", function() { payeachplayer(200, 'Chance');});
 chanceCards[4] = new Card("Go back three spaces.", function() { gobackthreespaces();});
-chanceCards[5] = new Card("ADVANCE TO THE NEAREST UTILITY (Classroom Supplies or PD Workshops). IF UNOWNED, you may buy it from the Bank. IF OWNED, throw dice and pay owner a total hundred times the amount thrown.", function() { advanceToNearestUtility();});
+chanceCards[5] = new Card("ADVANCE TO THE NEAREST UTILITY (Classroom Supplies or PD Workshops). If UNOWNED, you may buy it from the Bank. If OWNED, throw dice and pay owner a total hundred times the amount thrown.", function() { advanceToNearestUtility();});
 chanceCards[6] = new Card("You become the advisor for the Newspaper Club. Earn $500 in duty pay.", function() { addamount(500, 'Chance');});
 chanceCards[7] = new Card("ADVANCE TO THE NEAREST RAILROAD (Pre-service Teaching, In-service Teaching, Physics Teacher Education, or PhysTEC Community). If UNOWNED, you may buy it from the Bank. If OWNED, pay owner twice the rental to which they are otherwise entitled.", function() { advanceToNearestRailroad();});
 chanceCards[8] = new Card("You lose a class session this semester. Pay $500.", function() { subtractamount(500, 'Chance');});
