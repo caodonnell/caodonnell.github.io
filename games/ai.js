@@ -5,7 +5,7 @@ function AITest(p) {
 	// This variable is static, it is not related to each instance.
 	this.constructor.count++;
 
-	p.name = "AI Test " + this.constructor.count;
+	p.name = "Computer " + this.constructor.count;
 
 	// Decide whether to buy a property the AI landed on.
 	// Return: boolean (true to buy).
@@ -50,7 +50,7 @@ function AITest(p) {
 
 		var proposedMoney = 250 - tradeValue + money;
 
-		if (tradeValue > 250) {
+		if (tradeValue > 150) {
 			return true;
 		} else if (tradeValue >= -50 && initiator.money > proposedMoney) {
 
