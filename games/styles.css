@@ -16,6 +16,10 @@ div,p {
 	font-family: arial, sans-serif;
 }
 
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
 #setup {
 	display: none;
 	margin: 15px;

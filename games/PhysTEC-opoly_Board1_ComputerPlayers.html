@@ -64,23 +64,23 @@
 					<td style="text-align: left;">With color group</td>
 					<td style="text-align: right;">$&nbsp;&nbsp;&nbsp;<span id="deed-grouprent">120</span></td>
 				<tr>
-					<td style="text-align: left;">With 1 Diploma</td>
+					<td style="text-align: left;">With 1 House</td>
 					<td style="text-align: right;"><span id="deed-rent1">60</span></td>
 				</tr>
 				<tr>
-					<td style="text-align: left;">With 2 Diplomas</td>
+					<td style="text-align: left;">With 2 Houses</td>
 					<td style="text-align: right;"><span id="deed-rent2">180</span></td>
 				</tr>
 				<tr>
-					<td style="text-align: left;">With 3 Diplomas</td>
+					<td style="text-align: left;">With 3 Houses</td>
 					<td style="text-align: right;"><span id="deed-rent3">500</span></td>
 				</tr>
 				<tr>
-					<td style="text-align: left;">With 4 Diplomas</td>
+					<td style="text-align: left;">With 4 Houses</td>
 					<td style="text-align: right;"><span id="deed-rent4">700</span></td>
 				</tr>
 				<tr>
-					<td style="text-align: left;">With COHORT</td>
+					<td style="text-align: left;">With HOTEL</td>
 					<td style="text-align: right;"><span id="deed-rent5">700</span></td>
 				</tr>
 				<tr>
@@ -88,8 +88,8 @@
 						<!--div style="margin-bottom: 8px;">With HOTEL $<span id="deed-rent5">900</span>.</div-->
     <div style="margin-top:8px;">Mortgage value $<span id="deed-mortgage">80</span></div>
     <div>Cost to unmortgage $<span id="deed-unmortgage">80</span></div>
-						<div style="margin-top:8px;">Diplomas cost $<span id="deed-houseprice">100</span> each</div>
-						<div>Cohorts, $<span id="deed-hotelprice">100</span> plus 4 Diplomas</div>
+						<div style="margin-top:8px;">Houses cost $<span id="deed-houseprice">100</span> each</div>
+						<div>Hotels, $<span id="deed-hotelprice">100</span> plus 4 houses</div>
 						<!--div style="font-size: 9px; font-style: italic; margin-top: 5px;">If a player owns ALL the Lots of any Color-Group, the rent is Doubled on Unimproved Lots in that group.</div-->
 					</td>
 				</tr>
@@ -259,12 +259,21 @@
 	</div>
 
 	<div id="setup">
+	  <div style="margin-bottom: 20px;">
+	  <p>This version of the game is designed for people who would like to play against Computer players. However, there are a few caveats:
+		    <ul>
+		      <li>There is some lingering weirdness with which trades a Computer player will accept.</li>
+		      <li>If a player resigns after being bankrupted by a Computer player and has mortgaged properties, you will have to decide which property(ies) the creditor Computer player will unmortgage.</li>
+		      <li>If you land on an unowned property and choose to not buy it, Computer players will (probably) always put in at least an initial bid in the auction.</li>
+		      <li>Computer players will be named "Computer 1", "Computer 2", etc. regardless of what you enter below.</li>
+		    </p>
+		    </div>
 		<div style="margin-bottom: 20px;">
-			Select the number of players (Computer players are currently disabled).
+		  Select the number of players.
 			<select id="playernumber" title="Select the number of players for the game.">
-				<option>2</option>
+				<option selected="selected">2</option>
 				<option>3</option>
-				<option selected="selected">4</option>
+				<option>4</option>
 				<option>5</option>
 				<option>6</option>
 				<option>7</option>
@@ -290,7 +299,7 @@
 			</select>
 			<select id="player1ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player1name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -312,8 +321,8 @@
 
 			</select>
 			<select id="player2ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player2name').disabled = this.value !== '0';">
-				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="0">Human</option>
+				<option value="1" selected="selected">Computer</option>
 			</select>
 		</div>
 
@@ -335,7 +344,7 @@
 			</select>
 			<select id="player3ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player3name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -357,7 +366,7 @@
 			</select>
 			<select id="player4ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player4name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -380,7 +389,7 @@
 			</select>
 			<select id="player5ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player5name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -402,7 +411,7 @@
 			</select>
 			<select id="player6ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player6name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -425,7 +434,7 @@
 			</select>
 			<select id="player7ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player7name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -447,7 +456,7 @@
 			</select>
 			<select id="player8ai" title="Choose whether this player is controled by a human or by the computer." onclick="document.getElementById('player8name').disabled = this.value !== '0';">
 				<option value="0" selected="selected">Human</option>
-				<option value="1" disabled>Computer</option>
+				<option value="1">Computer</option>
 			</select>
 		</div>
 
@@ -492,9 +501,9 @@
 					<div id="manage">
 						<div id="option">
 							<div id="buildings" title="Available buildings"></div>
-							<input type="button" value="Buy Diploma" id="buyhousebutton"/>
+							<input type="button" value="Buy house" id="buyhousebutton"/>
 							<input type="button" value="Mortgage" id="mortgagebutton" />
-							<input type="button" value="Sell Diploma" id="sellhousebutton"/>
+							<input type="button" value="Sell house" id="sellhousebutton"/>
 						</div>
 						<div id="owned"></div>
 					</div>
