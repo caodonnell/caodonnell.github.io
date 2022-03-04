@@ -2,6 +2,8 @@ window.onbeforeunload = function() {
   return "Data will be lost if you leave the page, are you sure?";
 };
 
+const roundval = Math.pow(10,1);
+
 function Game() {
 	var die1;
 	var die2;
@@ -1017,7 +1019,7 @@ function Game() {
 		for (var i = 0; i < 40; i++) {
 			sq = square[i];
 			if (sq.owner == p.index && sq.mortgage) {
-			    price = Math.round(sq.price / 20) * 10;
+			    price = Math.round(sq.price / 2 / roundval) * roundval;
 
 				HTML += "<tr><td class='propertycellcolor' style='background: " + sq.color + ";";
 
@@ -1067,12 +1069,12 @@ function Game() {
 				if (!sq.mortgage) {
 					sq.owner = p.creditor;
 				} else {
-				    bankruptcyUnmortgageFee += Math.round(sq.price / 100) * 10;
+				    bankruptcyUnmortgageFee += Math.round(sq.price / 10 / roundval) * roundval;
 				}
 
 				if (sq.house > 0) {
 					if (p.creditor !== 0) {
-					    pcredit.money += Math.round(sq.houseprice / 20) * 10 * sq.house;
+					    pcredit.money += Math.round(sq.houseprice / 2 / roundval) * roundval * sq.house;
 					}
 					sq.hotel = 0;
 					sq.house = 0;
@@ -1589,15 +1591,15 @@ function updateOption() {
 	document.getElementById("mortgagebutton").disabled = false;
 
 	if (sq.mortgage) {
-	    document.getElementById("mortgagebutton").value = "Unmortgage ($" + Math.round(sq.price * 0.55 / 10)*10 + ")";
-	    document.getElementById("mortgagebutton").title = "Unmortgage " + sq.name + " for $" + round(sq.price * 0.55 / 10) * 10 + ".";
+	    document.getElementById("mortgagebutton").value = "Unmortgage ($" + Math.round(sq.price * 0.55 / roundval) * roundval + ")";
+	    document.getElementById("mortgagebutton").title = "Unmortgage " + sq.name + " for $" + round(sq.price * 0.55 / roundval) * roundval + ".";
 		$("#buyhousebutton").hide();
 		$("#sellhousebutton").hide();
 
 		allGroupUnmortgaged = false;
 	} else {
-	    document.getElementById("mortgagebutton").value = "Mortgage ($" + Math.round(sq.price / 20) * 10 + ")";
-	    document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + Math.round(sq.price / 20) * 10 + ".";
+	    document.getElementById("mortgagebutton").value = "Mortgage ($" + Math.round(sq.price / 2 / roundval) * roundval + ")";
+	    document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + Math.round(sq.price / 2 / roundval) * roundval + ".";
 
 		if (sq.groupNumber >= 3) {
 			$("#buyhousebutton").show();
@@ -1606,9 +1608,9 @@ function updateOption() {
 			sellhousebutton.disabled = false;
 
 			buyhousebutton.value = "Buy Diploma ($" + sq.houseprice + ")";
-		    sellhousebutton.value = "Sell Diploma ($" + Math.round(sq.houseprice / 20) * 10 + ")";
+		        sellhousebutton.value = "Sell Diploma ($" + Math.round(sq.houseprice / 2 / roundval) * roundval + ")";
 			buyhousebutton.title = "Buy a Diploma for $" + sq.houseprice;
-		    sellhousebutton.title = "Sell a Diploma for $" + Math.round(sq.houseprice /20) * 10;
+		        sellhousebutton.title = "Sell a Diploma for $" + Math.round(sq.houseprice / 2 / roundval) * roundval;
 
 			if (sq.house == 4) {
 				buyhousebutton.value = "Buy Cohort ($" + sq.houseprice + ")";
@@ -1616,8 +1618,8 @@ function updateOption() {
 			}
 			if (sq.hotel == 1) {
 				$("#buyhousebutton").hide();
-			    sellhousebutton.value = "Sell Cohort ($" + Math.round(sq.houseprice / 20)*10 + ")";
-			    sellhousebutton.title = "Sell a Cohort for $" + Math.round(sq.houseprice / 20) * 10;
+			        sellhousebutton.value = "Sell Cohort ($" + Math.round(sq.houseprice / 2 / roundval) * roundval + ")";
+			        sellhousebutton.title = "Sell a Cohort for $" + Math.round(sq.houseprice / 2 / roundval) * roundval;
 			}
 
 			var maxhouse = 0;
@@ -2083,7 +2085,7 @@ function sellHouse(index) {
 		addAlert(p.name + " sold a Diploma on " + sq.name + ".");
 	}
 
-    p.money += Math.round(sq.houseprice / 20) * 10;
+        p.money += Math.round(sq.houseprice / 2 / roundval) * roundval;
 	updateOwned();
 	updateMoney();
 }
@@ -2180,7 +2182,7 @@ function showdeed(property) {
 	if (sq.mortgage) {
 		$("#deed-mortgaged").show();
 		document.getElementById("deed-mortgaged-name").textContent = sq.name;
-	    document.getElementById("deed-mortgaged-mortgage").textContent = Math.round(sq.price / 20) * 10;
+	        document.getElementById("deed-mortgaged-mortgage").textContent = Math.round(sq.price / 2 / roundval) * roundval;
 
 	} else {
 
@@ -2189,14 +2191,14 @@ function showdeed(property) {
 			document.getElementById("deed-header").style.backgroundColor = sq.color;
 			document.getElementById("deed-name").textContent = sq.name;
 		        document.getElementById("deed-baserent").textContent = sq.baserent;
-		    document.getElementById("deed-grouprent").textContent = sq.grouprent;
+		        document.getElementById("deed-grouprent").textContent = sq.grouprent;
 			document.getElementById("deed-rent1").textContent = sq.rent1;
 			document.getElementById("deed-rent2").textContent = sq.rent2;
 			document.getElementById("deed-rent3").textContent = sq.rent3;
 			document.getElementById("deed-rent4").textContent = sq.rent4;
 			document.getElementById("deed-rent5").textContent = sq.rent5;
-		    document.getElementById("deed-mortgage").textContent = Math.round(sq.price /20)*10;
-		    document.getElementById("deed-unmortgage").textContent = Math.round(sq.price * 0.55/10)*10;
+		        document.getElementById("deed-mortgage").textContent = Math.round(sq.price / 2 / roundval) * roundval;
+		        document.getElementById("deed-unmortgage").textContent = Math.round(sq.price * 0.55 / roundval) * roundval;
 			document.getElementById("deed-houseprice").textContent = sq.houseprice;
 			document.getElementById("deed-hotelprice").textContent = sq.houseprice;
 
@@ -2204,15 +2206,15 @@ function showdeed(property) {
 			$("#deed-special").show();
 			document.getElementById("deed-special-name").textContent = sq.name;
 			document.getElementById("deed-special-text").innerHTML = utiltext();
-		    document.getElementById("deed-special-mortgage").textContent = Math.round(sq.price / 20)*10;
-		    document.getElementById("deed-special-unmortgage").textContent = Math.round(sq.price * 0.55/10)*10;
+		        document.getElementById("deed-special-mortgage").textContent = Math.round(sq.price / 2 / roundval) * roundval;
+		        document.getElementById("deed-special-unmortgage").textContent = Math.round(sq.price * 0.55 / roundval) * roundval;
 
 		} else if (sq.groupNumber == 1) {
 			$("#deed-special").show();
 			document.getElementById("deed-special-name").textContent = sq.name;
 			document.getElementById("deed-special-text").innerHTML = transtext();
-		    document.getElementById("deed-special-mortgage").textContent = Math.round(sq.price / 20)*10;
-		    document.getElementById("deed-special-unmortgage").textContent = Math.round(sq.price*0.55 / 10)*10;
+		        document.getElementById("deed-special-mortgage").textContent = Math.round(sq.price / 2 / roundval) * roundval;
+		        document.getElementById("deed-special-unmortgage").textContent = Math.round(sq.price * 0.55 / roundval) * roundval;
 		}
 	}
 }
@@ -2250,8 +2252,8 @@ function mortgage(index) {
 		return false;
 	}
 
-	var mortgagePrice = Math.round(sq.price /20)*10;
-	var unmortgagePrice = Math.round(sq.price * 0.55/10)*10;
+	var mortgagePrice = Math.round(sq.price / 2 / roundval) * roundval;
+	var unmortgagePrice = Math.round(sq.price * 0.55 / roundval) * roundval;
 
 	sq.mortgage = true;
 	p.money += mortgagePrice;
@@ -2269,8 +2271,8 @@ function mortgage(index) {
 function unmortgage(index) {
 	var sq = square[index];
 	var p = player[sq.owner];
-	var unmortgagePrice = Math.round(sq.price * 0.55/10)*10;
-	var mortgagePrice = Math.round(sq.price /20)*10;
+	var unmortgagePrice = Math.round(sq.price * 0.55 / roundval) * roundval;
+	var mortgagePrice = Math.round(sq.price / 2 / roundval) * roundval;
 
 	if (unmortgagePrice > p.money || !sq.mortgage) {
 		return false;
@@ -2938,16 +2940,16 @@ window.onload = function() {
 		var s = square[checkedProperty];
 
 		if (s.mortgage) {
-			if (player[s.owner].money < Math.round(s.price * 0.55/10)*10) {
-				popup("<p>You need $" + (Math.round(s.price * 0.55/10)*10 - player[s.owner].money) + " more to unmortgage " + s.name + ".</p>");
+			if (player[s.owner].money < Math.round(s.price * 0.55 / roundval) * roundval) {
+				popup("<p>You need $" + (Math.round(s.price * 0.55 / roundval) * roundval - player[s.owner].money) + " more to unmortgage " + s.name + ".</p>");
 
 			} else {
-				popup("<p>" + player[s.owner].name + ", are you sure you want to unmortgage " + s.name + " for $" + Math.round(s.price * 0.55/10)*10 + "?</p>", function() {
+				popup("<p>" + player[s.owner].name + ", are you sure you want to unmortgage " + s.name + " for $" + Math.round(s.price * 0.55 / roundval) * roundval + "?</p>", function() {
 					unmortgage(checkedProperty);
 				}, "Yes/No");
 			}
 		} else {
-			popup("<p>" + player[s.owner].name + ", are you sure you want to mortgage " + s.name + " for $" + Math.round(s.price / 20)*10 + "?</p>", function() {
+			popup("<p>" + player[s.owner].name + ", are you sure you want to mortgage " + s.name + " for $" + Math.round(s.price / 2 / roundval) * roundval + "?</p>", function() {
 				mortgage(checkedProperty);
 			}, "Yes/No");
 		}
