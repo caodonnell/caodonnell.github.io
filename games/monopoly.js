@@ -1886,7 +1886,7 @@ function advance(destination, pass) {
 		} else {
 			p.position = pass;
 			p.money += 2000;
-			addAlert(p.name + " collected a $2000 salary for passing GO.");
+			addAlert(p.name + " collected a $2000 bonus for passing GO.");
 		}
 	}
 	if (p.position < destination) {
@@ -1894,7 +1894,7 @@ function advance(destination, pass) {
 	} else {
 		p.position = destination;
 		p.money += 2000;
-		addAlert(p.name + " collected a $2000 salary for passing GO.");
+		addAlert(p.name + " collected a $2000 bonus for passing GO.");
 	}
 
 	land();
@@ -1910,7 +1910,7 @@ function advanceToNearestUtility() {
 	} else if (p.position >= 28) {
 		p.position = 12;
 		p.money += 2000;
-		addAlert(p.name + " collected a $2000 salary for passing GO.");
+		addAlert(p.name + " collected a $2000 bonus for passing GO.");
 	}
 
 	land(true);
@@ -1928,7 +1928,7 @@ function advanceToNearestRailroad() {
 	} else if (p.position >= 35) {
 		p.position = 5;
 		p.money += 2000;
-		addAlert(p.name + " collected a $2000 salary for passing GO.");
+		addAlert(p.name + " collected a $2000 bonus for passing GO.");
 	}
 
 	land(true);
@@ -2531,11 +2531,11 @@ function roll() {
 		// Move player
 		p.position += die1 + die2;
 
-		// Collect $200 salary as you pass GO
+		// Collect $2000 bonus as you pass GO
 		if (p.position >= 40) {
 			p.position -= 40;
 			p.money += 2000;
-			addAlert(p.name + " collected a $2000 salary for passing GO.");
+			addAlert(p.name + " collected a $2000 bonus for passing GO.");
 		}
 
 		land();

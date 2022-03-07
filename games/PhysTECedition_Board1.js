@@ -180,7 +180,7 @@ square[21] = new Square("Arizona State University", null, "#FF0000", 1251, 7, 92
 square[22] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[23] = new Square("Rowan", null, "#FF0000", 1260, 7, 973, 990, 1070, 2139, 3209, 4279, 6418);
 square[24] = new Square("University of Minnesota", null, "#FF0000", 1308, 7, 855, 942, 1073, 2146, 3219, 4292, 8584);
-square[25] = new Square("Physics Teacher Educ.", null, "#000000", 2000, 1);
+square[25] = new Square("Physics Teacher Educ", null, "#000000", 2000, 1);
 square[26] = new Square("Univ of  WI - River Falls", null, "#FFFF00", 1308, 8, 711, 727, 773, 1546, 2318, 3091, 3864);
 square[27] = new Square("Towson University", null, "#FFFF00", 1384, 8, 1018, 1078, 1114, 2228, 3342, 4456, 5570);
 square[28] = new Square("PD Workshops", null, "#989898", 1500, 2);
@@ -194,7 +194,7 @@ square[35] = new Square("PhysTEC Community", null, "#000000", 2000, 1);
 square[36] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[37] = new Square("CSU Long Beach", null, "#0000FF", 2058, 10, 1178, 1232, 1357, 2713, 4070, 5427, 6783);
 square[38] = new Square("Insurance Premiums", "Pay $200", "#FFFFFF");
-square[39] = new Square("City College of New York", null, "#0000FF", 2053, 10, 1091, 1152, 1287, 2574, 3861, 5149, 6436);
+square[39] = new Square("City College of NY", null, "#0000FF", 2053, 10, 1091, 1152, 1287, 2574, 3861, 5149, 6436);
 
 var communityChestCards = [];
 var chanceCards = [];
