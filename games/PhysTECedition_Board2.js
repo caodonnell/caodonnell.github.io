@@ -1,7 +1,8 @@
-function Square(name, pricetext, color, price, groupNumber, baserent, grouprent, rent1, rent2, rent3, rent4, rent5) {
+function Square(name, pricetext, color, price, groupNumber, baserent, grouprent, rent1, rent2, rent3, rent4, rent5, roundval=Math.pow(10,1)) {
 	this.name = name;
     if (null == pricetext) {
-	    this.pricetext = "$" + price.toString();
+	    priceround = Math.round(price/roundval)*roundval;
+	    this.pricetext = "$" + priceround.toString();
 	} else {
 	    this.pricetext = pricetext;
 	}
@@ -11,14 +12,14 @@ function Square(name, pricetext, color, price, groupNumber, baserent, grouprent,
 	this.house = 0;
 	this.hotel = 0;
 	this.groupNumber = groupNumber || 0;
-	this.price = (price || 0);
-        this.baserent = (baserent || 0);
-        this.grouprent = (grouprent || 0);
-	this.rent1 = (rent1 || 0);
-	this.rent2 = (rent2 || 0);
-	this.rent3 = (rent3 || 0);
-	this.rent4 = (rent4 || 0);
-	this.rent5 = (rent5 || 0);
+        this.price = (Math.round(price/roundval)*roundval || 0);
+        this.baserent = (Math.round(baserent/roundval)*roundval || 0);
+        this.grouprent = (Math.round(grouprent/roundval)*roundval || 0);
+	this.rent1 = (Math.round(rent1/roundval)*roundval || 0);
+	this.rent2 = (Math.round(rent2/roundval)*roundval || 0);
+	this.rent3 = (Math.round(rent3/roundval)*roundval || 0);
+	this.rent4 = (Math.round(rent4/roundval)*roundval || 0);
+	this.rent5 = (Math.round(rent5/roundval)*roundval || 0);
 	this.landcount = 0;
 
 	if (groupNumber === 3 || groupNumber === 4) {
@@ -155,45 +156,45 @@ function citytax() {
 var square = [];
 
 square[0] = new Square("GO", "COLLECT $2000 BONUS AS YOU PASS.", "#FFFFFF");
-square[1] = new Square("Brigham Young Univ. - Idaho", null,  "#8B4513", 800, 3, 770, 820, 940, 1880, 2820, 3760, 9390);
+square[1] = new Square("Brigham Young Univ - Idaho", null,  "#8B4513", 800, 3, 769, 817, 939, 1879, 2818, 3757, 9393);
 square[2] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[3] = new Square("University of Arkansas", null,  "#8B4513", 780, 3, 910, 980, 1060, 2110, 3170, 4230, 7390);
+square[3] = new Square("University of Arkansas", null,  "#8B4513", 780, 3, 913, 978, 1056, 2113, 3169, 4225, 7394);
 square[4] = new Square("Income Tax", "Pay $500", "#FFFFFF");
 square[5] = new Square("Pre-service Teaching", "$2000", "#000000", 2000, 1);
-square[6] = new Square("Western Michigan Univ.", null, "#87CEEB", 880, 4, 810, 1000, 1000, 2000, 3000, 3990, 4990);
+square[6] = new Square("Western Michigan Univ", null, "#87CEEB", 881, 4, 806, 999, 999, 1997, 2996, 3994, 4993);
 square[7] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[8] = new Square("Michigan State Univ.", null, "#87CEEB", 910, 4, 780, 940, 960, 1910, 2870, 3830, 6700);
-square[9] = new Square("SUNY Buffalo State", null, "#87CEEB", 920, 4, 720, 900, 1010, 2010, 3020, 4030, 10070);
+square[8] = new Square("Michigan State Univ", null, "#87CEEB", 909, 4, 779, 938, 956, 1913, 2869, 3826, 6695);
+square[9] = new Square("SUNY Buffalo State", null, "#87CEEB", 920, 4, 724, 905, 1007, 2015, 3022, 4030, 10074);
 square[10] = new Square("Just Visiting", "", "#FFFFFF");
-square[11] = new Square("University of Kentucky", null, "#FF0080", 920, 5, 790, 880, 970, 1950, 2920, 3900, 5850);
+square[11] = new Square("University of Kentucky", null, "#FF0080", 918, 5, 785, 882, 975, 1950, 2925, 3900, 5849);
 square[12] = new Square("Classroom Supplies", "$1500", "#989898", 1500, 2);
-square[13] = new Square("University of Cincinnati", null, "#FF0080", 920, 5, 930, 1120, 1210, 2430, 3640, 4850, 7280);
-square[14] = new Square("University of Central FL", null, "#FF0080", 1050, 5, 850, 850, 910, 1820, 2730, 3640, 5460);
+square[13] = new Square("University of Cincinnati", null, "#FF0080", 916, 5, 928, 1118, 1213, 2427, 3640, 4854, 7280);
+square[14] = new Square("University of Central FL", null, "#FF0080", 1050, 5, 853, 853, 910, 1820, 2730, 3640, 5461);
 square[15] = new Square("In-service Teaching", "$2000", "#000000", 2000, 1);
-square[16] = new Square("Texas State University", null, "#FFA500", 1110, 6, 1030, 1040, 1080, 2160, 3250, 4330, 5410);
+square[16] = new Square("Texas State University", null, "#FFA500", 1114, 6, 1027, 1044, 1082, 2164, 3246, 4328, 5410);
 square[17] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[18] = new Square("Georgia State Univ.", null, "#FFA500", 1190, 6, 940, 1040, 1150, 2300, 3450, 4590, 6890);
-square[19] = new Square("Middle TN State Univ.", null, "#FFA500", 1200, 6, 840, 950, 1050, 2100, 3160, 4210, 5260);
+square[18] = new Square("Georgia State Univ", null, "#FFA500", 1185, 6, 943, 1044, 1148, 2297, 3445, 4593, 6890);
+square[19] = new Square("Middle TN State Univ", null, "#FFA500", 1197, 6, 835, 952, 1052, 2103, 3155, 4207, 5258);
 square[20] = new Square("Free Parking", "", "#FFFFFF");
-square[21] = new Square("Arizona State University", null, "#FF0000", 1250, 7, 920, 1010, 1060, 2110, 3170, 4230, 6340);
+square[21] = new Square("Arizona State University", null, "#FF0000", 1251, 7, 922, 1006, 1056, 2113, 3169, 4225, 6338);
 square[22] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[23] = new Square("Rowan", null, "#FF0000", 1260, 7, 970, 990, 1070, 2140, 3210, 4280, 6420);
-square[24] = new Square("University of Minnesota", null, "#FF0000", 1310, 7, 860, 940, 1070, 2150, 3220, 4290, 8580);
+square[23] = new Square("Rowan", null, "#FF0000", 1260, 7, 973, 990, 1070, 2139, 3209, 4279, 6418);
+square[24] = new Square("University of Minnesota", null, "#FF0000", 1308, 7, 855, 942, 1073, 2146, 3219, 4292, 8584);
 square[25] = new Square("Physics Teacher Educ.", "$2000", "#000000", 2000, 1);
-square[26] = new Square("Univ. of WI - River Falls", null, "#FFFF00", 1310, 8, 710, 730, 770, 1550, 2320, 3090, 3860);
-square[27] = new Square("Towson University", null, "#FFFF00", 1380, 8, 1020, 1080, 1110, 2230, 3340, 4460, 5570);
+square[26] = new Square("Univ of  WI - River Falls", null, "#FFFF00", 1308, 8, 711, 727, 773, 1546, 2318, 3091, 3864);
+square[27] = new Square("Towson University", null, "#FFFF00", 1384, 8, 1018, 1078, 1114, 2228, 3342, 4456, 5570);
 square[28] = new Square("PD Workshops", "$1500", "#989898", 1500, 2);
-square[29] = new Square("UT Austin", null, "#FFFF00", 1430, 8, 980, 1010, 1030, 2060, 3080, 4110, 5140);
+square[29] = new Square("UT Austin", null, "#FFFF00", 1434, 8, 984, 1011, 1028, 2055, 3083, 4110, 5138);
 square[30] = new Square("Go to Re-Certify", "Go directly to Re-Certification. Do not pass GO. Do not collect $2000.", "#FFFFFF");
-square[31] = new Square("The College of New Jersey", null, "#008000", 1540, 9, 780, 1000, 1210, 2420, 3620, 4830, 10870);
-square[32] = new Square("CU Boulder", null, "#008000", 1610, 9, 830, 980, 1090, 2180, 3270, 4370, 6550);
+square[31] = new Square("The College of New Jersey", null, "#008000", 1539, 9, 782, 1004, 1208, 2416, 3624, 4832, 10871);
+square[32] = new Square("CU Boulder", null, "#008000", 1605, 9, 832, 984, 1091, 2183, 3274, 4366, 6549);
 square[33] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[34] = new Square("Seattle Pacific University", null, "#008000", 1910, 9, 1170, 1220, 1430, 2870, 4300, 5740, 11470);
+square[34] = new Square("Seattle Pacific University", null, "#008000", 1906, 9, 1174, 1223, 1434, 2868, 4302, 5736, 11472);
 square[35] = new Square("PhysTEC Community", "$2000", "#000000", 2000, 1);
 square[36] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[37] = new Square("Stony Brook University", null, "#0000FF", 2040, 10, 870, 870, 930, 1860, 2790, 3720, 6520);
+square[37] = new Square("Stony Brook University", null, "#0000FF", 2035, 10, 870, 874, 931, 1862, 2794, 3725, 6518);
 square[38] = new Square("Insurance Premiums", "Pay $200", "#FFFFFF");
-square[39] = new Square("Cal Poly San Luis Obispo", null, "#0000FF", 2370, 10, 1050, 1280, 1290, 2590, 3880, 5170, 7760);
+square[39] = new Square("Cal Poly San Luis Obispo", null, "#0000FF", 2374, 10, 1051, 1275, 1293, 2586, 3880, 5173, 7759);
 
 var communityChestCards = [];
 var chanceCards = [];
