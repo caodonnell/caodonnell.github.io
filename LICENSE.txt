@@ -1,3 +1,5 @@
+-- License below is for the CSS/template used on my page --
+
 Creative Commons Attribution 3.0 Unported
 http://creativecommons.org/licenses/by/3.0/
 
