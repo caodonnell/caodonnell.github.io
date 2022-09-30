@@ -2269,10 +2269,23 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		/*list-style: disc;*/
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
+
+		ul.a {
+		        list-style: disc;
+		}
+
+		ul.b {
+		        list-style: circle;
+		}
+		
+		ul.c {
+		        list-style: square;
+		}
+	    
 
 		ul li {
 			padding-left: 0.5em;
