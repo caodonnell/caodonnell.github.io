@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Christine O'Donnell, Ph.D.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Dr. Christine O'Donnell</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="stem_ed.html">STEM Education</a></li>
+							<li><a href="astronomy.html">Astronomy Research</a></li>
+							<li><a href="personal.html">Personal</a></li>
+						</ul>
+
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style3">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic02.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Equitable STEM Education</h1>
+							</header>
+							<div class="content">
+								<p>I am passionate about improving STEM education by addressing equity: the human endeavor of understanding the Universe involves many peoples, and each individual contributes their own different and unique perspectives, but that is not always acknowledged. </p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+					  <!-- Two -->
+					  <section id="two" class="spotlights">
+					    <section>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+											  <h3>Education Programs with the American Physical Society</h3>
+											</header>
+											
+											<p>I currently work as a Senior Program Manager with the American Physical Society (APS), the largest professional society of physicists. I contribute to and lead several projects that promote physics and physics education, including
+											  <ul>
+											    <li>The <a href="https://phystec.org/">Physics Teacher Education Coalition (PhysTEC)</a>, which promotes physics teaching career pathways. My role involves various managerial aspects, like budgeting, and I also lead engagement efforts with sites that are currently supported by PhysTEC, including organizing and facilitating cohort meetings and site visits. I also developed a pipeline to analyze data about the physics teacher shortage, leading to the redesign of PhysTEC's <a href="https://phystec.org/report-card">National Report on Physics Teacher Preparation</a>.
+
+											      <ul>
+												<li>For a fun diversion, I created a PhysTEC-themed Monopoly-style game to celebrate physics teacher education programs that are part of PhysTEC's 5+ Club, meaning that they've graduated at least 5 new physics teachers in a single academic year. Play <a href="https://caodonnell.github.io/games/PhysTEC-opoly.html">PhysTEC-opoly</a> here!</li>
+												</ul>
+											    </li>
+											    
+											    <li style="padding-bottom:1em">The <a href="https://ep3guide.org/">Effective Practices for Physics Programs (EP3)</a>, which curates resources and strategies for departments to address the many challenges they may encounter, such as increasing recruitment and retention; setting effective foundational documents and practices for department chairs; and addressing equity, diversity, and inclusion. Our EP3 Guide can provide hope and recommendations to departments in need. I am currently developing a marketing plan, along with related materials, to increase awareness of the resources that are available.</li>
+											  
+											    <li>The <a href="https://www.aps.org/programs/education/statistics/">APS Education & Diversity Statistics</a> webpage, which tracks trends in demographic data for physics degree recipients (Bachelor's, Masters', and PhD degrees) as compared with the recipients of all STEM degrees. I collect and analyze the data, and in 2022 and 2023, I mentored a summer undergraduate intern to update the graphs displayed on our website.</li>
+											
+											  </ul>
+
+											</p>
+
+
+											  
+
+										</div>
+									</div>
+									<img class = "image" src="images/PhysTEC_NRC_map.png" alt="" />
+								</section>
+
+					  <section>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+											  <h3>Culturally Responsive STEM Education</h3>
+											</header>
+											
+											<p>For my postdocotral research work with Arizona State Univeristy (ASU), I am developing and implementing culturally responsive science curriculum, as well as providing associated professional development for the instructors. I am contributing to
+											  <ul>
+											    <li>projects with K-12 students in Hawaii through the CompuGirls program through the Center for Gender Equity in Science & Technology, which targets girls and other gender minorities from historically excluded groups (including writing an astronomy curriculum, which is now available on <a href="https://www.physport.org/curricula/Culturally-Responsive-Astronomy/">PhysPort</a> along with an <a href="https://www.physport.org/recommendations/Entry.cfm?ID=125042">associated article</a> that describes my approach, and</li>
+											    <li>curricular materials for college-level introductory science courses (e.g., astronomy and geosciences) using citizen science projects in the Zooniverse, including <a href="https://www.zooniverse.org/projects/mschwamb/planet-four">Planet Four</a>.</li>
+											  </ul>
+											  While much previous inclusive science education literature focuses exclusively on bridging science content with students' personal cultural identities and backgrounds, my new curriculum engages learners to critique STEM. Specifically, by incorporating principles of asset-building, reflection, and connectedness into the curriculum, participants are empowered to problematize STEM's content and culture, guiding them to become change agentsto improve STEM and connect with their communities.</p>
+
+										</div>
+									</div>
+									<img class = "image" src="images/ARC_cited.png" alt="" />
+								</section>
+
+
+
+						  <section>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+											  <h3>Reforming a General-Education<br/>Astronomy Course</h3>
+											</header>
+											<!--I am passionate about improving STEM education - I recognize that I have been very fortunate with the experiences I've had in STEM, and I firmly believe I have a responsibility to make that the "norm" rather than the "exception". One critical aspect is to address inclusivity in science: the endeavor of understanding the Universe is one that involves many different people each of whom contribute their own different and unique perspectives and skill sets.-->
+											<p>As part of my Ph.D. research at the University of Arizona, I was part of a team that reformed a general-education astronomy course at the University of Arizona (ASTR 201 in Spring 2019) to incorporate an inclusive mindset into the course design, and I designed an evaluation strategy to assess whether our design helped students make connections between course content and their personal idenitites and experiences. Our design represents a model that other instructors can use to build inclusivity into their own courses, and the figure to the right is adapted from our research paper describing our course published in the <i>Journal of College Science Teaching</i> (available to NSTA members at <a href="https://www.nsta.org/journal-college-science-teaching/journal-college-science-teaching-januaryfebruary-2021/making">through the <i>JCST</i> website</a> or as a pre-print on <a href="https://arxiv.org/abs/2004.10218">arXiv at this link</a>).</p>
+
+										</div>
+									</div>
+									<img class = "image" src="images/inclusive_design.jpg" alt="" />
+								</section>
+
+
+						  <section>
+
+									
+									  
+																		  
+
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>College-Level Teaching & <br />Professional Development</h3>
+											</header>
+											
+											<p>Besides conducting education research on college courses, I've served as the teaching assistant (TA) for courses ranging from economics to physics. I've also worked with the  <a href="http://warrior-scholar.org/">Warrior Scholar Project</a>, an academic "bootcamp" for veterans returning to school, during their STEM week at the University of Arizona. I led week-long mini-research projects on exoplanet detection and imaging tehcniques that introduced participants to science research skills.</p>
+											<p>Furthermore, I've participated in professional development workshops on teaching, including the <a href="https://isee.ucsc.edu/programs/pdp/"> Professional Development Program (PDP)</a> from the UCSC Institute for Scientist & Engineer Educators (ISEE), which focuses on effective science teaching through inquiry activities developed around themes of equity & inclusion. I worked on a team with 3 other participants to design and teach a science inquiry activity on Bayesian analysis methods in astronomy research topics, including exoplanets and globular clusters (on the right, a picture of the PDP participants; I'm in the purple shirt on the right).</p>
+
+											<p>Finally, as part of my service with the Associate Graduate Council for the College of Science (AGCCS), I organized the 2017 & 2018 College of Science Teaching Assistant Trainings, including contacting facilitators todevelop the sessions on topics including grading, classroom managment, and diversity & inclusion.</p>
+										
+										</div>
+									</div>
+									<img class="image" src="images/WEST_cropped.jpg" alt="" data-position="top center" />
+</section>
+
+  
+								<section>
+
+										
+
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>K-12 Education & <br />Professional Development</h3>
+											</header>
+											<p>I am currently an instructor for the <a href="https://skyschool.arizona.edu/">University of Arizona Sky School</a>. I have been a part of their City program where we work with local 3rd & 4th grade students. Each instructor facilitates a group of 6-8 students through a 3-day scientific inquiqry activity motivated by the students'  own observations and questions about their environment (e.g., what kinds of habitats insects prefer or what causes different colors of plants). Students collect data to determine which hypothesis of their is supported, and at the end of the inquiry process, they present their results to the rest of their class.</p>
+											<p>In addition, through my work with the Sky School and other programs, I have developed lesson plans for Arizona science standards and led sessions at professional development workshops for K-12 teachers on astronomy topics, including the Earth-Moon system (e.g., lunar phases), the Solar System, and constellations.</p>
+
+											<p>Finally, I work as an independent contractor with the Sonoran Glass School, a local nonprofit dedicated to arts education, where I provide additional instructional assistance for field trips and summer camps to teach (typically middle school) students about the history, science, and art of glass. </p>
+      <!--p>I have particpated in a few other K-12 programs as well:
+        <ul>
+          <li>I've volunteered with the National Optical Astronomy Observatory (NOAO) Teen Astronomy Cafe Series to introduce high school students to astronomy research through hands-on activities and conversations over lunch.</li>
+          <li> I also volunteered with Project ASTRO through NOAO, which connected me with a local 6th grade teacher, and I led astronomy activities with her class on our solar system and scales of the galaxy & universe.</li>
+          <li> Finally, I worked as an independent contractor with the Sonoran Glass School, a local nonprofit dedicated to arts education. I provided additional instructional assistance when they brought middle school students into the School to learn about glass beadmaking.</li>
+            </ul>
+</p-->
+										</div>
+									</div>
+									<img class="image" src="images/skyschool.png" alt="" data-position="25% 25%" />
+                                                                </section>
+  
+								<section>
+
+									
+									  
+																		  
+
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Public Outreach</h3>
+											</header>
+											<p>I've given a variety of public talks about my research, including during Family Weekend at the Unviersity of Arizona (October 2017) and at the Sonora Astronomical Society (March 2018), as well as talks aimed at K-12 audiences, including the keynote talk at a STEM Night at a local middle school (February 2020) and co-leading a <a href="http://www.teenastronomycafe.org/">Teen Astro Cafe</a> program. Additionally, when I was elected President of the Associate Graduate Council for the College of Science (AGCCS), I created a survey for our consituents and found the vast majority of graduate students wanted more opportunities to do science outreach. I piloted a new event we dubbed <i>Science Speakeasies</i>, a sort of "informal science cafe". Instead of one scientist giving a talk to an audience, we brought a team of scientists to a local bar to engage in short free-form conversations with members of the public. I partnered with the <a href="https://marchforsciencesaz.org/">March for Science of Southern Arizona</a>, a local nonprofit, to host the events. I coordinated scientist registration and emceed the events, which were extremely successful and continue under the current AGCCS leadership.</p>
+											  
+										</div>
+									</div>
+									<img class="image" src="images/teen_astro_cafe.png" alt="" data-position="top center" />
+								</section>
+								<section>
+
+										
+
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Public Policy</h3>
+											</header>
+											<p>Between my B.A. in Astronomy/Physics (Univeristy of Virginia 2013) and starting my Ph.D., I earned a Master of Public Policy (MPP) degree from the <a href="http://batten.virginia.edu/">Frank Batten School of Leadership & Public Policy at the University of Virginia</a>. Through the program, I learned and practiced many general policy skills, including writing breifs, memos, and other articles as well as analyzing the effectiveness of policies. I applied these lessons in my internship with the <a href="http://www.aapt.org/">American Association of Physics Teachers (AAPT)</a>. For my MPP thesis, I wrote a policy analysis with AAPT on increasing gender diversity in physics, and I presented the results at the 5th International Conference on Women in Physics in Waterloo, Canada.</p>
+									
+										</div>
+									</div>
+									<img class="image" src="images/batten_large.png" alt="" data-position="top center" />
+								</section>
+
+					  </section>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+						  <section>
+						    <h5>Contact me</h5>
+								<form method="POST" action="https://formspree.io/f/xdojzkea">
+									<div class="fields">
+										<div class="field half">
+											<label for="Name">Name</label>
+											<input type="text" name="Name" id="Name" />
+										</div>
+										<div class="field half">
+											<label for="Email">Email</label>
+											<input type="text" name="Email" id="Email" />
+										</div>
+										<div class="field">
+											<label for="Message">Message</label>
+											<textarea name="Message" id="Message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+						        <!--section class="split">
+							</section-->
+						        <!--section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section-->
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+						  <ul class="icons">
+						    <!--li><a href="mailto:christine.a.odon@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li-->
+						    <li><a href="https://www.instagram.com/supernovacrafts/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						    <li><a href="https://www.facebook.com/odonnell.christine" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						    <li><a href="https://www.linkedin.com/in/christineodonnell/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<!--li><a href="https://twitter.com/SupernovaCrafts" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li-->
+								
+								
+								<li><a href="https://github.com/caodonnell" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								
+							</ul>
+							<ul class="copyright">
+								<!--li>&copy; Untitled</li--><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+</div>
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
